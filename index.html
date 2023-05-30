@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo1"><img src="imagenes/Logo.png"></h1>
+    <h1>Encriptador de Texto</h1>
+
+    <div class="columns">
+      <div class="column">
+        <textarea id="input" placeholder="Ingresa el texto a encriptar/desencriptar, sin mayúsculas ni tilde"></textarea>
+        <button onclick="encriptarTexto()">Encriptar</button>
+        <button onclick="limpiar()">Limpiar</button>
+      </div>
+      <div class="column">
+        <textarea id="output" placeholder="Texto encriptado/desencriptado"></textarea>
+        <button onclick="desencriptarTexto()">Desencriptar</button>
+        <button onclick="copiarTexto()">Copiar</button>
+      </div>
+      <div id="mensaje-copiado" class="mensaje-copiado">¡Texto copiado!</div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
